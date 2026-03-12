@@ -42,7 +42,7 @@ public class SecurityConfig {
                         "/vendor/send-otp",
                         "/vendor/verify-otp",
                         "/vendor/register","/vendor/prefill/**",
-                        "/vendor/upload/**","/admin/login","/function/**","/global/**","/primary/**","/primary/dropdown/**").permitAll()
+                        "/vendor/upload/**","/admin/login","/function/**","/global/**","/primary/**","/primary/dropdown/**","/admin/users").permitAll()
                 
                 // Master data endpoints - authenticated users can access
                 .requestMatchers("/departments/**", "/categories/**", "/tests/**").authenticated()

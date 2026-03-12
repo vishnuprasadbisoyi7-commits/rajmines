@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 @RestController
 @RequestMapping("/admin")
 @CrossOrigin("*")
-@PreAuthorize("hasRole('ADMIN')") // ✅ applies to all endpoints
+@PreAuthorize("hasAuthority('ADMIN')") // ✅ applies to all endpoints
 public class AdminController {
 
 	@Autowired
